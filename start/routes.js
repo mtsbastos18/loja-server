@@ -25,3 +25,5 @@ Route.resource('products', 'ProductController')
 
   Route.resource('categories', 'CategoryController')
   .apiOnly()
+  Route.post('/sessions', 'SessionController.create')
+  Route.post('/users', 'UserController.create')
